@@ -1,0 +1,33 @@
+{
+    "manifest_version": 2,
+    "name": "Court digger",
+    "short_name": "Court digger",
+    "author": "Mr.Krabs",
+    "version": "1.0.0",
+    "description": "给老哥开发的一个BJ法院内容抓取工具.",
+    "homepage_url": "http://www.google.com",
+    "options_ui": {
+        "page": "options.html",
+        "chrome_style": true
+    },
+    "browser_action": {
+        "default_title": "挖掘机",
+        "default_icon": "image/icon_128.png",
+        "default_popup": "court-digger.html"
+    },
+    "icons": {
+        "48": "image/icon_128.png",
+        "128": "image/icon_128.png"
+    },
+    "content_scripts": [{
+        "matches": ["http://*/*"],
+        "js": ["js/court-digger.js"]
+    }],
+    "permissions": [
+        "storage",
+        "clipboardWrite",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "content_security_policy": "script-src 'self'; object-src 'self'"
+}

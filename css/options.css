@@ -1,0 +1,21 @@
+/* 样式重置 */
+#wrap {padding: 10px;}
+:enabled:hover:-webkit-any(:-webkit-any(.btn-primary)) {
+    background-image: none;
+    background-color: #286090;
+    border-color: #204d74;
+    color: #FFF;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+:enabled:hover:-webkit-any(:-webkit-any(.btn-default)) {
+    background-image: none;
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+    box-shadow: none;
+    text-shadow: none;
+}
+.btn-primary {box-shadow: none; text-shadow: none;}
+.btn-default:hover {color: #333; background-color: #e6e6e6; border-color: #adadad;}
